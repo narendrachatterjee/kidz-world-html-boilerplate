@@ -1,176 +1,109 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Rubik:wght@400;600&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
+*{
+  padding: 0px;
+  margin: 0px;
 }
 
-body {
-  font-family: "Rubik", sans-serif;
+.cart{
+   border: 1px solid none;
+    background-color: rgb(97,150,255);
+    display: flex;
+    width: 52px;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: -8px;
+    margin-left: 75px;
+    
 }
 
-.books {
-  max-width: 200px;
-}
-
-.games,
-.crafts {
-  max-width: 300px;
-}
-
-.flex {
+.cost{
   display: flex;
+  margin-top: 10px;
 }
 
-.section-container {
-  flex-direction: column;
-  padding: 5%;
-}
-
-.space-between {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.space-evenly {
+.books{
+  display: flex;
   justify-content: space-evenly;
 }
 
-nav {
-  height: 50px;
+.Newgames{
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-top: 200px; */
+}
+
+.love{
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-top: 250px; */
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+#kwbl{
   width: 100%;
 }
 
-nav>div {
-  padding: 0% 5%;
+#discover{
+  margin-left:50px;
+  margin-top: 40px;
 }
 
-nav img {
-  height: 30px;
+.second{
+  margin-top: 60px;
+  margin-left: 40px;
 }
 
-#cart {
-  font-weight: bold;
-  align-items: center;
+.handmade{
+  margin-top: 50px;
+  margin-left: 40px;
 }
 
-header {
-  height: 500px;
-  width: 100%;
-  background-image: url("./assets/kw-background.png");
-  background-size: 100% 100%;
+.footer{
+  display: flex;
+  height: 150px;
+  background-color: black;
+  margin-top: 80px;
   color: white;
+  font-size: 20px;
 }
-
-.header-text {
-  flex-direction: column;
-  max-height: 100%;
-  max-width: 20%;
-  padding: 4% 5%;
-}
-
-header h1 {
-  font-size: 7vh;
-}
-
-header h5 {
-  font-size: 23px;
-  margin-top: 20px;
-}
-
-.section {
-  margin: 4% 0%;
-}
-
-.button {
-  cursor: pointer;
-  background-color: #6095ff;
-  color: white;
-  padding: 7px;
-  border-radius: 4px;
-}
-
-.buy img {
-  width: 20px;
-  padding-left: 5px;
-}
-
-.buy {
-  margin-top: 15px;
-  padding-bottom: 50px;
-}
-
-footer {
-  background-image: url("http://i1.faceprep.in/prograd-junior/footer-bg.png");
-  background-size: 100% 100%;
-  color: white;
-  padding: 0% 5%;
-}
-
-footer img {
+.footer>img{
+  margin-top: 2%;
   height: 150px;
   width: 150px;
+
   border-radius: 50%;
 }
 
-#details {
-  flex-direction: column;
-  text-align: right;
+#doneby{
+  margin-left: 1200px;
 }
 
-h1,
-h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-}
-
-h4 {
-  color: grey;
-  font-weight: lighter;
-}
-
-h6 {
-  font-size: 17px;
-}
-
-.buy p {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-h3,
-h2 {
-  margin-bottom: 10px;
-}
-
-.container {
-  flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-    height: 200px;
-    font-size: 15px;
-    text-align: start;
+@media (max-width:400px){
+  .books{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  header h1 {
-    font-size: 4vh;
+  .Newgames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  header h5 {
-    font-size: 15px;
+  .love{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .header-text {
-    padding: 0% 60% 5% 5%;
-  }
-
-  body {
-    text-align: center;
-  }
-
-  .container {
-    justify-content: center;
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
